@@ -4,10 +4,10 @@ import sys
 import paramiko
 import getpass
 
-hosts = input('Enter Your Hostname or Host IP: ')
-user = input('Enter Your Login Username: ')
-password = input('Enter Your Login Password: ')
-command = input("Enter target command:")
+hosts = raw_input('Enter Your Hostname or Host IP: ')
+user = raw_input('Enter Your Login Username: ')
+password = raw_input('Enter Your Login Password: ')
+command = raw_input("Enter target command:")
 
 ssh = paramiko.SSHClient() #Define value 'ssh' as calling the paramiko.sshclient
 #print('calling paramiko')
