@@ -6,7 +6,7 @@ import getpass
 
 hosts = raw_input('Enter Your Hostname or Host IP: ')
 user = raw_input('Enter Your Login Username: ')
-password = raw_input('Enter Your Login Password: ')
+password = getpass.getpass('Enter Your Login Password: ')
 command = raw_input("Enter target command:")
 
 ssh = paramiko.SSHClient() #Define value 'ssh' as calling the paramiko.sshclient
